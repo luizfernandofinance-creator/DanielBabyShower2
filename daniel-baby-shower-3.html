@@ -798,9 +798,6 @@ const JSONBIN_API_KEY = '$2a$10$Ladf2pyBj87Effobg7jD4uRSyqr8x22EmHHwiqJlI9UdxU9n
 const JSONBIN_BIN_ID  = '69d9823e36566621a89dd46c';             // e.g. '6642f3a...'
 /* ================================================================ */
 
-const configured = JSONBIN_API_KEY !== 'YOUR_JSONBIN_API_KEY'
-                && JSONBIN_BIN_ID  !== 'YOUR_BIN_ID';
-
 if (!configured) document.getElementById('setup-banner').classList.add('visible');
 
 const BIN_URL = `https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`;
